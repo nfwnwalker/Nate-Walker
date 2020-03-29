@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+
+:root {
+    --color-primary: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --color-text: var(--color-primary);
+}
+
+body {
+    color: var(--color-text);
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
