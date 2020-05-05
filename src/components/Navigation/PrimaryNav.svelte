@@ -11,70 +11,61 @@
 </script>
 
 <style>
-    .primary-nav {
-        width: 100%;
-    }
-
     .nav-list {
         margin: 0;
         padding-left: 0;
-        list-style-type: none;
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: repeat(2, 50%);
-        align-items: center;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .nav-list__item {
-        padding: 0.5rem;
-        display: inline-block;
-        border-right: 1px solid var(--color-primary);
-        border-bottom: 1px solid var(--color-primary);
-        text-align: center;
+        width: 50%;
+        border-right: 2px solid var(--color-primary);
+        border-bottom: 2px solid var(--color-primary);
+        font-size: 1.5em;
     }
 
-    .active,
-    .nav-list__item:not(.logo):hover {
+    .nav-list__item:hover {
         background-color: var(--color-primary);
         color: var(--color-white);
     }
 
-    .nav-link {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: inherit;
-        font-family: 'Roboto';
-        font-size: 1.5em;
+    .nav-list__item.logo {
+        display: none;
     }
 
-    .logo { display: none; }
+    .nav-list__item.logo:hover {
+        background-color: initial;
+    }
+
+    .nav-link {
+        padding: 0.25em 0.5em;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: inherit;
+    }
 
     /* 900px at 16px font */
     @media screen and (min-width: 56.25rem) {
-        .primary-nav {
-            border-bottom: 1px solid var(--color-primary);
-        }
 
-        .nav-list {
-            display: flex;
-            align-items: center;
+        .primary-nav {
+            border-bottom: 2px solid var(--color-primary);
         }
 
         .nav-list__item {
-            border: none;
-            border-right: 1px solid var(--color-primary);
-            text-align: left;
+            width: auto;
+            border-bottom: none;
         }
 
-        .nav-link {
-            /* 1. Should be height of logo view */
-            /* 2. By default it's set to 1.3 */
-            font-size: 2.5rem; /* 1. */
-            line-height: 0.9; /* 2. */
+        .nav-list__item.logo {
+            padding: 0.25em 0.5em;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
         }
-
-        .logo { display: initial; }
-        .logo:hover { cursor: pointer; }
     }
 </style>
 

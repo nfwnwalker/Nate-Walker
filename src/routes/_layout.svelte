@@ -8,32 +8,47 @@
 </script>
 
 <style>
-	:global(#app-root) {
-		/* 1. 1200px at 16px font size */
-		max-width: 87.5em; /* 1. */
-		min-height: 100vh;
-		margin: auto;
-		display: flex;
-  		flex-direction: column;
+	.grid.main-layout {
+		width: 100%;
+		height: 100vh;
+		grid-template-columns: 100%;
+		grid-template-rows: auto 1fr;
 	}
 
-	main {
-		/* 1. Forces main to fill remaining space */
-		flex: 1; /* 1. */
-		position: relative;
+	.grid.main-layout > .banner {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+	}
+
+	.grid.main-layout > .content {
+		grid-column: 1 / -1;
+		grid-row: 2 / -1;
+	}
+
+	.grid.content {
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+	}
+
+	.grid.content > * {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
+
+	.content {
+		overflow-y: scroll;
 	}
 </style>
 
 {#if segment}
-	<PrimaryNav
-		{indexRoute}
-		links={primaryNavLinks}
-		page={segment}
-	/>
-
-	<main>
+<div class="grid main-layout">
+	<header class="banner">
+		<PrimaryNav links={primaryNavLinks} page={segment} />
+	</header>
+	<section class="grid content" role="main">
 		<slot></slot>
-	</main>
+	</section>
+</div>
 {:else}
-	<FullPageNav links={primaryNavLinks} />
+<FullPageNav links={primaryNavLinks} />
 {/if}

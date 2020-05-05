@@ -12,11 +12,29 @@
 </script>
 
 <style>
+    .grid.master-detail {
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    }
+
+    .grid.master-detail > .master,
+    .grid.master-detail > .detail {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .top {
+        z-index: 1;
+    }
+
     .master-detail {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0; left: 0;
+    }
+
+    .master,
+    .detail {
+        background-color: var(--color-white);
+        overflow-y: scroll;
     }
 
     .master-list {
@@ -25,13 +43,10 @@
         list-style: none;
     }
 
-    ul a { text-decoration: none; }
-
     .master-list__item {
         border-bottom: 1px solid var(--color-primary);
         background-color: var(--color-white);
         color: var(--color-primary);
-        padding: 0.5em;
     }
 
     .master-list__item:hover,
@@ -40,69 +55,48 @@
         background-color: var(--color-primary);
     }
 
-    .ghost {
-        /* 1. Needs to be the same height as line height in order to look like text */
-        background-color: var(--color-primary);
-        height: 1.2em; /* 1. */
-        margin: 0;
+    .master-list__item > a {
+        padding: 0.5em;
+        display: block;
+        text-decoration: none;
+        color: inherit;
     }
-
-    .wrapper {
-        width: 100%;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    .large-screen { display: none; }
 
     /* 600px at 16px font */
     @media screen and (min-width: 37.5rem) {
-        .large-screen { display: initial; }
 
-        .master-detail {
-            display: grid;
-            grid-template-columns: calc(100vw / 6) 1fr;
-            grid-template-areas: "master detail";
+        .grid.master-detail {
+            grid-template-columns: minmax(12.5rem, 20%) 1fr;
+            grid-template-rows: 100%;
+        }
+
+        .grid.master-detail > .master {
+            grid-column: 1 / 2;
+        }
+
+        .grid.master-detail > .detail {
+            grid-column: 2 / -1;
         }
 
         .master {
-            grid-area: master;
-            border-right: 1px solid var(--color-primary);
-            overflow-y: scroll;
-        }
-
-        .detail { 
-            grid-area: detail; 
-            overflow-y: scroll;
+            border-right: 2px solid var(--color-primary);
         }
     }
 </style>
 
-<!--
-    If there is a project selected AND the screen is small only show detail.
-    If there is no project selected AND the screen is small only show master.
-    If the screen is large show both master and detail
--->
-
-<section class="master-detail">
-    <div class="master" class:large-screen={ segment ? true : false }>
+<div class="grid master-detail">
+    <section class="master" class:top={ segment ? false : true }>
         <ul class="master-list">
             {#if projects}
                 {#each projects as project}
-                    <a href={`/portfolio/${project.slug}`}>
-                        <li class="master-list__item" class:active={segment === project.slug}>
-                            {project.metadata.title}
-                        </li>
-                    </a>
+                    <li class="master-list__item" class:active={segment === project.slug}>
+                        <a href={`/portfolio/${project.slug}`}>{project.metadata.title}</a>
+                    </li>
                 {/each}
-            {:else}
-                <li class="master-list__item">
-                    <p class="ghost"></p>
-                </li>
             {/if}
         </ul>
-    </div>
-    <div class="detail" class:large-screen={ segment ? false : true }>
+    </section>
+    <section class="detail" class:top={ segment ? true : false }>
         <slot></slot>
-    </div>
-</section>
+    </section>
+</div>

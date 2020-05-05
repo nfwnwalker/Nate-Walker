@@ -19,6 +19,7 @@
     :global(.project) { 
         width: 90%;
         margin: auto;
+        padding-top: 1em;
         font-size: 1.2rem; 
     }
 
@@ -46,6 +47,12 @@
         background-color: hsl(0, 0%, 93%);
         border: 1px solid hsl(0, 0%, 60%);
         border-radius: 5px;
+    }
+
+    :global(video) {
+        max-height: 75vh;
+        margin: auto;
+        display: block;
     }
 
     :global(.project pre) { padding: 0.5em; }
