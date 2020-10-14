@@ -12,3 +12,6 @@ The bearded dragon is an omnivorous reptile native to central Australia. This in
         type="video/mp4"
     >
 </video>
+
+![BDStoryboard](images/portfolio/infographic/storyboard1.jpg)
+![specs](images/portfolio/infographic/specs.jpg)
