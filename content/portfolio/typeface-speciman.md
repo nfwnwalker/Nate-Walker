@@ -6,6 +6,10 @@ publishedOn: 2020-03-21
 This project was created to demonstrate the history and elements of the type-face Frutiger. Utilizing the aesthetic of Frutiger’s original purpose, public signage, the specimen takes you on a journey through the years as it describes the features of other typefaces that Frutiger borrows to become one of the most legible signage typefaces.
 
 ![Specimen 1](images/portfolio/typeface-speciman/specimen1.jpg)
+![Specimen 12](images/portfolio/typeface-speciman/storyboard1.jpg)
+![Specimen 13](images/portfolio/typeface-speciman/storyboard2.jpg)
+![Specimen 14](images/portfolio/typeface-speciman/storyboard3.jpg)
+![Specimen 15](images/portfolio/typeface-speciman/storyboard4.jpg)
 ![Specimen](images/portfolio/typeface-speciman/typefacespecimen.jpg)
 ![Specimen 4](images/portfolio/typeface-speciman/typefacespecimen4.jpg)
 ![Specimen 5](images/portfolio/typeface-speciman/typefacespecimen5.jpg)
