@@ -8,7 +8,7 @@ This campaign was created for Binghamton University Campus Recreation as a reima
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(18.75rem, 25rem));">
 <video style="width: 40%; margin: 2em auto; display: block;" controls>
     <source
-        src="videos/portfolio/baxter-the-bearcat/baxter-swim.mp4"
+        src="videos/portfolio/baxter-the-bearcat/jump-back-in.mp4"
         type="video/mp4"
     >
 </video>
@@ -22,7 +22,7 @@ This campaign was created for Binghamton University Campus Recreation as a reima
 
 <video style="width: 40%; margin: 2em auto; display: block;" controls>
     <source
-        src="videos/portfolio/baxter-the-bearcat/jump-back-in.mp4"
+        src="videos/portfolio/baxter-the-bearcat/open-rec-tuesday.mp4"
         type="video/mp4"
     >
 </video>
@@ -43,8 +43,10 @@ This campaign was created for Binghamton University Campus Recreation as a reima
 
 <video style="width: 40%; margin: 2em auto; display: block;" controls>
     <source
-        src="videos/portfolio/baxter-the-bearcat/open-rec-tuesday.mp4"
+        src="videos/portfolio/baxter-the-bearcat/baxter-swim.mp4"
         type="video/mp4"
     >
 </video>
 </div>
+
+![treadmills](images/portfolio/baxter-the-bearcat/Treadmills.jpg)
