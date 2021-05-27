@@ -3,7 +3,7 @@ title: Binghamton Campus Rec
 publishedOn: 2020-03-21
 ---
 
-From Augst 2019 to August 2020 Nate Walker developed all marketing materials for Binghmaton University Campus Recreation by using a combination of several programs in the Adobe Suites. Materials conisted of print and digital posters, banners, email campaigns, social media content, and merchandise.
+From Augst 2019 to August 2020 Nate Walker developed all marketing materials for Binghmaton University Campus Recreation by using a combination of several programs in the Adobe Suites. Materials consisted of print and digital posters, banners, email campaigns, social media content, and merchandise.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(18.75rem, 25rem));">
 <video style="width: 40%; margin: 2em auto; display: block;" controls>
