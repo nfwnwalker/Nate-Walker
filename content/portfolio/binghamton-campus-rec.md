@@ -27,7 +27,9 @@ From Augst 2019 to August 2020 Nate Walker developed all marketing materials for
 
 </div>
 
-![dresscodes](images/portfolio/baxter-the-bearcat/Dress Code11x17.jpg)
+![dresscodes](images/portfolio/baxter-the-bearcat/DressCode11x17.jpg)
+
+![treadmills](images/portfolio/baxter-the-bearcat/Treadmills.JPG)
 
 ![poster](images/portfolio/baxter-the-bearcat/ResHallPoster.jpg)
 
