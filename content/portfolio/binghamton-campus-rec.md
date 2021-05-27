@@ -13,11 +13,6 @@ From Augst 2019 to August 2020 Nate Walker developed all marketing materials for
     >
 </video>
 
-<video style="width: 40%; margin: 2em auto; display: block;" controls>
-    <source
-        src="videos/portfolio/baxter-the-bearcat/group-fitness.mp4"
-        type="video/mp4"
-    >
 </video>
 
 <video style="width: 40%; margin: 2em auto; display: block;" controls>
@@ -26,27 +21,15 @@ From Augst 2019 to August 2020 Nate Walker developed all marketing materials for
         type="video/mp4"
     >
 </video>
-
-<video style="width: 40%; margin: 2em auto; display: block;" controls>
-    <source
-        src="videos/portfolio/baxter-the-bearcat/open-rec-friday.mp4"
-        type="video/mp4"
-    >
+   
 </video>
 
-<video style="width: 40%; margin: 2em auto; display: block;" controls>
-    <source
-        src="videos/portfolio/baxter-the-bearcat/open-rec-monday.mp4"
-        type="video/mp4"
-    >
-</video>
 
-<video style="width: 40%; margin: 2em auto; display: block;" controls>
-    <source
-        src="videos/portfolio/baxter-the-bearcat/baxter-swim.mp4"
-        type="video/mp4"
-    >
-</video>
 </div>
 
+![treadmills](images/portfolio/baxter-the-bearcat/Dress Code11x17.jpg)
+
 ![treadmills](images/portfolio/baxter-the-bearcat/Treadmills.jpg)
+
+![treadmills](images/portfolio/baxter-the-bearcat/ResHallPoster.jpg)
+
