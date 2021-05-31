@@ -1,5 +1,5 @@
 ---
-title: Binghamton Campus Rec
+title: Binghamton Campus Recreation
 publishedOn: 2020-03-21
 ---
 
