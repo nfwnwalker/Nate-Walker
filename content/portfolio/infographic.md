@@ -3,7 +3,7 @@ title: Infographic
 publishedOn: 2020-03-21
 ---
 
-The bearded dragon is an omnivorous reptile native to central Australia. This infographic communicates the growth and diet of Nate Walker’s bearded dragon through the first year of its life. The challenges involved in this project were communicating a variety of information in an engaging and organized means all within the bounds of a mobile device. All icons were created in Adobe Illustrator, and animations done in Adobe After Effects. 
+The bearded dragon is an omnivorous reptile native to central Australia. This infographic communicates the speculated growth and diet of my bearded dragon through the first year of its life. The challenges involved in this project were communicating a variety of information in an engaging and organized means all within the bounds of a mobile device. All icons were created in Adobe Illustrator, and animations done in Adobe After Effects. 
 
 
 <video controls>
